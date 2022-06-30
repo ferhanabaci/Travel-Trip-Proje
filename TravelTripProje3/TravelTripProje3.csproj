@@ -137,6 +137,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206301855480_mig_iletisim.cs" />
+    <Compile Include="Migrations\202206301855480_mig_iletisim.designer.cs">
+      <DependentUpon>202206301855480_mig_iletisim.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\AdresBlog.cs" />
@@ -268,6 +272,7 @@
     <Content Include="weblogin\fonts\Audiowide-Regular.ttf" />
     <Content Include="Views\GirişYap\Login.cshtml" />
     <Content Include="Views\iletisim\Index.cshtml" />
+    <Content Include="Views\iletisim\Iletisim.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -284,6 +289,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202206301855480_mig_iletisim.resx">
+      <DependentUpon>202206301855480_mig_iletisim.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
